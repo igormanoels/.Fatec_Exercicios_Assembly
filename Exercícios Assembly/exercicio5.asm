@@ -25,7 +25,7 @@ main:
         li $v0, 5
         syscall
         add $t1, $v0, 0
-
+ 
     mul $t2, $t0, $t0
     mul $t3, $t1, $t1
     add $t4, $t2, $t3

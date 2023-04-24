@@ -28,7 +28,7 @@ main:
 		li $v0, 5
 		syscall
 		add $t2, $v0, 0
-		
+		 
 
 	mul $t3, $t0, 10 			# quant * preço P
 	mul $t4, $t1, 12 			# quant * preço M
