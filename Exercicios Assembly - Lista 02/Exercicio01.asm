@@ -27,4 +27,3 @@ main:
     add $a0, $t1, 0
     syscall
 
- 

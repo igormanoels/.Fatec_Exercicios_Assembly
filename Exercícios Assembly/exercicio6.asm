@@ -27,6 +27,33 @@ main:
         syscall
         add $t1, $v0, 0
     
+    #se os valores forem iguais
+    beq $t0, $t1, se
+    j senao
+
+se:
+    add $t2, $t0, $t1
+
+    li $v0, 4 
+    la $a0, escreva04
+    syscall
+
+        li $v0, 1
+        add $a0, $t2, 0
+        syscall
+        j fimse
+
+senao:
+    mul $t2, $t0, $t1
+    
+    li $v0, 4 
+    la $a0, escreva05
+    syscall
+
+        li $v0, 1
+        add $a0, $t2, 0
+        syscall
+
+fimse:
 
     
- 

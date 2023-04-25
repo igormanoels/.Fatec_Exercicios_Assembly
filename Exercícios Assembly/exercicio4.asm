@@ -26,7 +26,7 @@ main:
 
     li $v0, 4
     la $a0, escreva03
-    syscall 
+    syscall
 
         li $v0, 5
         syscall

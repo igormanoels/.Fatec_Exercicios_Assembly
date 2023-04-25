@@ -28,4 +28,3 @@ main:
         li $v0, 1
         add $a0, $t3, 0
         syscall
- 

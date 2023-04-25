@@ -27,7 +27,7 @@ main:
         li $v0, 5
         syscall
         add $t1, $v0, 0
- 
+
     li $v0, 4
     la $a0, escreva04 # REFERENTE A MES ATUAL
     syscall
