@@ -20,7 +20,13 @@
 
 Exemplo: Entrada = 517 Saída: "CENTENA = 5", "DEZENA = 1" e "UNIDADE = 7".
 
-\*\*Sabe-se que a entrada deve ser um número entre 100 e 999, validar a entrada para que não permita números fora deste intervalo
+\*\*Sabe-se que a entrada deve ser um número entre 100 e 999, validar a entrada para que não permita números fora deste intervalo.
+
+11.Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar quando for lido um número negativo.
+\*Sabe-se que a entrada deve ser um número entre 0 e 100, validar a entrada para que não permita números fora deste intervalo
+12.Desenvolver um algoritmo que leia a altura, em centímetros de 15 pessoas. Este programa deverá calcular e mostrar:
+a. A menor altura do grupo;
+b. A maior altura do grupo;
 
 ### Lista 2
 
