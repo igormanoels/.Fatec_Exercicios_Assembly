@@ -1,16 +1,16 @@
 .data
-    leia0: .asciiz "\n Algorimo: Contador de anos bissextos"
+    leia0: .asciiz "\n Algorimo: Contador de anos bissextos "
     leia1: .asciiz "\n Informe o primeiro ano: "
-    leia2: .asciiz "\n Informe o segundo ano: "
-    leia3: .asciiz "\n Nao e possivel calcular uma diferanca maior de 1000 anos, afinal voce nao e um vampiro para querer saber isso! ou e?"
-    leia4: .asciiz "\n Favor informar os anos com ao menos 1 ano de diferenca"
-    leia5: .asciiz "\n A quantidade de anos bissextos e de:  "
-    leia6: .asciiz "\n Valores abaixo de Zero nao sao aceitos! "
+    leia2: .asciiz " Informe o segundo ano: "
+    leia3: .asciiz " Nao e possivel calcular uma diferanca maior de 1000 anos, afinal voce nao e um vampiro para querer saber isso! ou e? \n"
+    leia4: .asciiz " Favor informar os anos com ao menos 1 ano de diferenca \n"
+    leia5: .asciiz " A quantidade de anos bissextos e de:  "
+    leia6: .asciiz " Valores abaixo de Zero nao sao aceitos! \n"
+    leia7: .asciiz "\n Obrigado por testar minha aplicacao! \n "
 .text
 
 main:
-# 66. Faça um algoritmo que leia dois valores correspondentes a anos 
-#e mostre quantos anos bissextos existem entre eles. 
+# 66. Faça um algoritmo que leia dois valores correspondentes a anos e mostre quantos anos bissextos existem entre eles. 
 #(A diferença entre os anos não pode ser maior que 1000)
 
     li $v0, 4
@@ -80,7 +80,12 @@ Calcular:
         li $v0, 1
         add $a0,$t4,0
         syscall
-        j main   
+#        j Agradecimento   #Deixei em Looping para que seja realizado o teste
+
+    li $v0, 4
+    la $a0, leia7
+    syscall
+    j main
 
 Refazer:
     li $v0, 4
@@ -99,3 +104,9 @@ Menorquezero:
     la $a0, leia6
     syscall
     j main
+
+#    Agradecimento:
+#    li $v0, 4
+#    la $a0, leia7
+#    syscall
+#    j main
