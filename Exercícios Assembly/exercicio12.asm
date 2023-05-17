@@ -50,6 +50,7 @@ SegundoMaior:
     add $t2, $t0, 0
     j Entradas
 
+# Ajustar o direcionamento dos valores  
 Entradas:
     li $v0, 4
     la $a0, msg2
