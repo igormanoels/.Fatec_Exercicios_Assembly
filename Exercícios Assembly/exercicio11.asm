@@ -1,11 +1,11 @@
 .data
-    msg1: .asciiz "Algoritimo Identifica qual o intervalo de um valor"
-    msg2: .asciiz "\n Informe um valor:  "
+    msg1: .asciiz " Algoritimo Identifica qual o intervalo de um valor \n"
+    msg2: .asciiz " Informe um valor:  "
     msg3: .asciiz "\n O valor esta entre [0-25]: "
     msg4: .asciiz "\n O valor esta entre [26-50]: "
     msg5: .asciiz "\n O valor esta entre [51-75]: "
     msg6: .asciiz "\n O valor esta entre [76-100]: "
-    msg7: .asciiz "\n O valor informado e invalido! "
+    msg7: .asciiz " O valor informado e invalido!\n \n"
 .text
 main:
 
@@ -21,6 +21,26 @@ main:
         syscall
         add $t0, $v0, 0
 
+#menor que 0
+    li $t1, 0
+    bgt $t0, $t1, Maiorque100
+    
+    li $v0, 4
+    la $a0, msg7
+    syscall
+    j main
+
+Maiorque100:    
+#maior que 100
+    li $t1, 100
+    blt $t0, $t1, irpara
+    
+    li $v0, 4
+    la $a0, msg7
+    syscall
+    j main
+
+irpara:
     ble $t0, 25, se
     j senao
 

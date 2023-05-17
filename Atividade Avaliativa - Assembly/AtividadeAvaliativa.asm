@@ -80,7 +80,7 @@ Calcular:
         li $v0, 1
         add $a0,$t4,0
         syscall
-#        j Agradecimento   #Deixei em Looping para que seja realizado o teste
+#        j Agradecimento   #Deixei em Looping para que  os testes sejam realizado
 
     li $v0, 4
     la $a0, leia7

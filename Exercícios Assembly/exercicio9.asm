@@ -3,14 +3,14 @@
     texto2: .asciiz "\n Informe o Primeiro Valor  "
     texto3: .asciiz "\n Informe o Segundo Valor  "
     texto4: .asciiz "\n O resultado da divisao e =  "
-    texto5: .asciiz "\n Por favor, informe um valor diferente de zero!"
+    texto5: .asciiz "\n Atencao! O segundo valor precisa ser diferente de zero!"
 .text
 main:
-
     li $v0, 4
     la $a0, texto1
     syscall
 
+#recebe primeiro valor
     li $v0, 4
     la $a0, texto2
     syscall
@@ -18,7 +18,8 @@ main:
         li $v0, 5
         syscall
         add $t0, $v0, 0
-    
+
+#recebe segundo valor    
     li $v0, 4
     la $a0, texto3
     syscall
@@ -27,6 +28,7 @@ main:
         syscall
         add $t1, $v0, 0
 
+#teste segundo valor
     #se valor = 0, digiar o valor novamente
     beq $t1, 0, se
     j senao
@@ -43,6 +45,7 @@ se:
         li $v0, 5
         syscall
         add $t1, $v0, 0
+        beq $t1, 0, se
         j senao
 
 senao:
