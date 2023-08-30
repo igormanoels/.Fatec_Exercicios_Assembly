@@ -1,6 +1,6 @@
 # Fatec_Exercicios_Assembly-
 
-Exercícios realizados no curso de Análise e Desenvolvimento de Sistemas, Disciplina de Arquitetura e Organização de Computadores.
+Exercícios realizados no curso de Análise e Desenvolvimento de Sistemas, na disciplina de Arquitetura e Organização de Computadores.
 
 ## Listas de Exercícios
 
