@@ -28,7 +28,7 @@ main:
 
     mul $t2, $t0, $t1           #CÁLCULOS
     
-    li $v0, 4                   #SAÍDA DE DADOS
+    li $v0, 4                   #SAÍDA DOS DADOS
     la $a0, msg04
     syscall
 

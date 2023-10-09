@@ -45,7 +45,7 @@ main:
     add $t0, $t1, $t2   #soma total dos valores
     add $t0, $t0, $t3
 
-                                    #SAÍDA DE DADOS
+                                    #SAÍDA DOS DADOS
     li $v0, 4               
     la $a0, escreva05
     syscall
